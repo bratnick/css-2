@@ -1,0 +1,90 @@
+h1 {
+  background-color: aquamarine;
+  font-weight: bold;
+  color: coral;
+  font-size: 40pt;
+  text-align: center;
+}
+body {
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: beige;
+  /* box-shadow: gray 10px 10px 10px; */
+  transition: 0.8s;
+  margin: 0;
+}
+.item {
+  height: 200px;
+  width: 250px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: gray 10px 10px 10px;
+  transition: 0.8s;
+  border-radius: 10px;
+}
+.r1 {
+  background-color: blueviolet;
+}
+.r2 {
+  background-color: brown;
+}
+.r3 {
+  background-color: darkolivegreen;
+}
+.r4 {
+  background-color: slategray;
+}
+div.item:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: gray 20px 20px 20px;
+  transition: 0.5s;
+}
+div.item:active {
+  transform: translate(5px, 5px);
+  box-shadow: gray 5px 5px 5px;
+  transition: 0.2s;
+}
+.item > h2 {
+  font-size: 13pt;
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: center;
+}
+.item > p {
+  font-size: 11pt;
+  color: whitesmoke;
+  text-align: justify;
+}
+@media only screen and (max-width: 1135px) {
+  .container {
+    justify-content: space-between;
+  }
+  .item {
+    margin: 40px;
+    /* width: 40%; */
+  }
+}
+@media only screen and (max-width: 1070px) {
+  .container {
+    justify-content: space-between;
+  }
+  .item {
+    margin: 20px;
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 618px) {
+  .container {
+    justify-content: space-between;
+  }
+  .item {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
